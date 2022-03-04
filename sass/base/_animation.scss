@@ -1,0 +1,60 @@
+@keyframes moveInLeft {
+          /*initial state of the animation*/
+          0% {
+                    opacity: 0;
+                    transform: translateX(-10rem);
+
+          }
+          
+          /* intermediate position of animation*/
+          80% {
+                    transform: translateX(1rem) 
+                    /*rotate(270deg) this is done if you want to text or image to rotate*/ ;
+
+          }
+
+          /* final stage of the animation*/
+          100% {
+                    opacity: 1;
+                    transform: translate(0);
+          }
+}
+
+@keyframes moveInRight{
+          /*initial state of the animation*/
+          0% {
+                    opacity: 0;
+                    transform: translateX(10rem);
+                    /*the minus or plus sign on the declaration value means that the animation should either move to the front or back on the X axis.
+                    thhesame is applicable to the movement on the Y axis.*/
+
+          }
+          
+          /* intermediate position of animation*/
+          80% {
+                    transform: translateX(-1rem) ;
+
+          }
+
+          /* final stage of the animation*/
+          100% {
+                    opacity: 1;
+                    transform: translate(0);
+          }
+}
+
+@keyframes moveInBottom {
+          /*initial state of the animation*/
+          0% {
+                    opacity: 0;
+                    transform: translateY(30px);
+
+          }
+          
+
+          /* final stage of the animation*/
+          100% {
+                    opacity: 1;
+                    transform: translate(0);
+          }
+}

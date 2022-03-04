@@ -1,0 +1,65 @@
+* {
+          margin: 0;
+          padding: 0;
+}
+
+//SASS VARIABLES (a variable is a container where we can store some reusable databand those data can be used all over the code. variable names are defined starting with the $ sign.
+$color-primary: rgb(236, 236, 119) ;
+$color-secondary: orange ;
+$color-tertiary:pink ;
+$color-text-dark:grey ;
+$color-text-light:white ;
+
+$width-button:20px ;
+
+
+
+ 
+nav {
+          margin: 30px;
+          background-color: $color-primary;
+}
+
+
+//nesting a css elements inside each other ( by element relationship and children)
+.navigation {
+          list-style-type: none;
+
+          // li is a descendant of navigation class so it can be nested inside the navigation class.
+          li {
+                    display: inline-block;
+                    margin-left: 30px;
+          } 
+
+          li:last-child {
+                    margin: 0px;
+          }
+}
+
+// .navigation {
+          list-style-type: none;
+
+          // li is a descendant of navigation class so it can be nested inside the navigation class.
+          li {
+                    display: inline-block;
+                    margin-left: 30px;
+          } 
+
+          li:last-child {
+                    margin: 0px;
+          }// to avoid repetition of label we can remove the li: in the front of the last-child and replace it with the (&) then nest it inside the parent li 
+
+          //  li { display: inline-block;
+               margin-left: 30px;
+               &:first-child {
+               margin: 0;
+            }
+          //   a:link {
+                      text-decoration: none;
+                      text-transform: uppercase;
+                      color: $color-text-dark;
+          //   }
+            }
+          }
+// }
+

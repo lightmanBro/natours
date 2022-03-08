@@ -9,10 +9,7 @@
 
 @import "components/button";
 
+@import "layout/grid";
 @import "layout/header";
 
-@import "layout/grid";
-
-@import "pages/_home";
-
-
+@import "pages/home";

@@ -110,6 +110,7 @@
     "jsprim": "^1.4.2",
     "kind-of": "^6.0.3",
     "lines-and-columns": "^1.2.4",
+    "live-server": "^1.2.1",
     "locate-path": "^5.0.0",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0",
@@ -218,7 +219,7 @@
     "node-sass": "^7.0.1"
   },
   "scripts": {
-    "compile:sass": "node-sass  sass/main.scss css/style.css"
+    "compile:sass": "node-sass  sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",

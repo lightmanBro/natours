@@ -10,11 +10,13 @@ body {
 
 // Nesting the heading relatives into the element selectors
 
+//heading-primary//
 .heading-primary {
           color: $color-white;
           text-transform: uppercase;
           margin-bottom: 6rem;
 
+          //heading-primary-main
           &-main {
                     display: block;
                     font-size: 6rem;
@@ -25,7 +27,8 @@ body {
                     animation-timing-function: ease-in-out;
           
           }
-          
+
+          //heading-primary-sub//
           &-sub {
                     display: block;
                     font-size: 2rem;
@@ -36,7 +39,7 @@ body {
           }
           
 }
-
+//heading-secondary//
 .heading-secondary {
           font-size: 3.5rem;
           text-transform: uppercase;
@@ -54,6 +57,7 @@ body {
           }
 }
 
+//heading-tertiary//
 .heading-tertiary {
           font-size: $default-font-size;
           text-transform: uppercase;

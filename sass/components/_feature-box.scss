@@ -7,15 +7,16 @@
           box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
           transition: transform .3s;
 
+          //feature-box__icon//
           &__icon {
                     font-size: 6rem;
                     margin-bottom: .5rem;
                     display: inline-block;
-                    // color: $color-primary;
                     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-                    -webkit-background-clip: text;
+                    -webkit-background-clip: text; // KEEPING THE BACKGROUND COLOR INSIDE THE TEXT ONLY//
                     color: transparent;
           }
+          //feature-box__icon:hover
           &:hover {
                     transform: translateY(-1.5rem) scale(1.03);
           }

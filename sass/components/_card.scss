@@ -26,6 +26,7 @@
                     border-radius: 3px;
                     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
                     overflow: hidden;
+                    B
 
                     //card__side--front 
                     &--front {
@@ -86,12 +87,12 @@
 
                     //card__picture--2
                     &--2 {
-                              background-image: url(../img/photo5.jpeg);
+                              background-image: linear-gradient(to right bottom, $color-tertiary-ligth, $color-tertiary-dark), url(../img/photo5.jpeg);
                     }
 
                     //card__picture--3
                     &--3 {
-                              background-image: url(../img/photo6.jpeg);
+                              background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/photo6.jpeg);
                     }
           }
 
@@ -121,14 +122,29 @@
 
                     //card__heading-span--1
                     &--1 {
-                              background-image: linear-gradient(to right bottom,
-                              rgba($color-secondary-ligth, .85),
-                              rgba($color-secondary-dark, .85));
+                              background-image: linear-gradient(to right bottom
+                              rgba($color-secondary-ligth, .8),
+                              rgba($color-secondary-dark, .8));
                     }
+
+                    &--2 {
+                              background-image: linear-gradient(to right bottom,
+                              rgba($color-tertiary-ligth, .8),
+                              rgba($color-tertiary-dark, .8));
+                    }
+
+                    &--3 {
+                              background-image: linear-gradient(to right bottom,
+                              rgba($color-primary-light, .8),
+                              rgba($color-primary-dark, .8));
+                    }
+
           }
+
 
           &__details {
                     padding: 3rem;
+                    
                     ul{
 
                               list-style: none;
@@ -139,11 +155,33 @@
                                         text-align: center;
                                         font-size: 1.5rem;
                                         padding: 1rem;
-                                        
-                                        &:not(:last-child) {
-                                                  border-bottom: 1px solid #eee;
+
+                                         &:not(:last-child) {
+                                         border-bottom: 1px solid #eee;
                                         }
-                              }
-                    }
+          }         }          }
+
+          &__cta {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 90%;
+                    text-align: center;
+          }
+          &__price-box {
+                    
+                    color: $color-white;
+                    margin-bottom: 8rem;
+          }
+
+          &__price-only {
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+          }
+
+          &__price-value {
+                    font-size: 6rem;
+                    font-weight: 100;
           }
 }

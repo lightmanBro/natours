@@ -517,6 +517,21 @@ body {
 .logo {
   height: 4rem; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__list {
+    list-style: none; }
+  .footer__items {
+    display: inline-block; }
+
 .section-about {
   background-color: #eee;
   padding: 25rem 0;

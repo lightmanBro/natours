@@ -39,7 +39,7 @@
           }
           
           &__list {
-                    // position: absolute;
+                    position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%,-50%);
@@ -52,11 +52,27 @@
           }
 
           &__link {
+                    &:link,
+                    &:visited {
+                    display: inline-block;
                     font-size: 3rem;
                     font-weight: 300;
+                    padding: 1rem 3rem;
                     color: $color-white;
                     text-decoration: none;
                     text-transform: uppercase;
+                    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+                    background-size: 220%;
+                    transition: all .4s;
+                    }
+
+                    &:hover,
+                    &:active {
+                              background-position: 100%;
+                              color: $color-primary;
+                              transform: translateX(1rem);
+
+                    }
           }
 
 

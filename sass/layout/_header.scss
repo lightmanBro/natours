@@ -11,6 +11,21 @@
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
           position: relative;
           
+          // @media (min-resolution: 192dpi) and (max-width: 37.5em), (min-width: 125em) {
+          //           background-image: linear-gradient(to right bottom,
+          //           rgba($color-primary-light, 0.8),
+          //           rgba($color-primary-dark, 0.8)),
+          //           url(../img/hero.jpg);
+          // }
+
+          //this media query screen size has been added to the first one.
+          // @media (min-width: 2000px) {
+          //           background-image: linear-gradient(to right bottom,
+          //           rgba($color-primary-dark, 0.8),
+          //           rgba($color-primary-dark, 0.8)),
+          //           url(../img/hero.jpg);
+          // }
+
           &__logo-box {
                     position: absolute;
                     top: 4rem;

@@ -10,20 +10,18 @@
           visibility: hidden;
           transition: all .3s;
 
-          &:target {
-                    opacity: 1;
-                    visibility: visible;
-                    
-          }
-
 
           &__content {
                     @include absCenter;
+
                     width: 75%;
                     background-color: $color-white;
                     box-shadow: 0 2rem 4rem rgba($color-black, .2);
                     border-radius: 3px;
                     display: table;
+                    opacity: 0;
+                    transform: translate(-50%, -50%) scale(.25);
+                    transition: all .5s .2s; //the .2s is for the animation delay//
           }
 
           &__left {
@@ -56,6 +54,19 @@
                     -webkit-hyphens: auto;
                     hyphens: auto;
           }
+          // popup open state//
+
+          &:target {
+                    opacity: 1;
+                    visibility: visible;
+                    
+          }
+
+          &:target &__content {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+          }
+
 
           &__close{
                     &:link,
@@ -68,6 +79,7 @@
                               text-decoration: none;
                               display: inline-block; 
                               line-height: 1;
+                              transition: all .2s;
                     }
 
                     &:hover {

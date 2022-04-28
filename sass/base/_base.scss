@@ -9,6 +9,12 @@
 html {
           //this defines what 1 rem should be (10px which is 62.5% of 16px)
           font-size: 62.5%;
+
+          @media (max-width: 600px) {font-size: 50%;}
+
+          @include respond-phone {
+                    font-size: 50%;
+          }
 }
 
  body {

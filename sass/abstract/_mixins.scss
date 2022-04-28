@@ -16,3 +16,14 @@
 
 // MEDIA QUERY MANAGER //
 
+/* 
+0 - 600px:     phone
+600 - 900px:     tablet in potrait mode
+900 - 1200px:    tablet in landscape
+1200 - 1800 is where our normal style apply
+1800 + : big desktop 
+*/
+
+@mixin respond-phone {
+          @media (max-width: 600px) {@content}
+}

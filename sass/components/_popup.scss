@@ -16,22 +16,6 @@
                     
           }
 
-          &__close{
-                    &:link,
-                    &:visited {
-                              color: $color-grey-dark;
-                              position: absolute;
-                              top: 2.5rem;
-                              right: 2.5rem;
-                              font-size: 3rem;
-                              text-decoration: none;
-                              display: inline-block; 
-                    }
-
-                    &:hover {
-                              color: $color-primary;
-                    }
-          }
 
           &__content {
                     @include absCenter;
@@ -71,6 +55,24 @@
                     -moz-hyphens: auto;
                     -webkit-hyphens: auto;
                     hyphens: auto;
+          }
+
+          &__close{
+                    &:link,
+                    &:visited {
+                              color: $color-grey-dark;
+                              position: absolute;
+                              top: 2.5rem;
+                              right: 2.5rem;
+                              font-size: 3rem;
+                              text-decoration: none;
+                              display: inline-block; 
+                              line-height: 1;
+                    }
+
+                    &:hover {
+                              color: $color-primary;
+                    }
           }
 
 

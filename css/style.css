@@ -436,16 +436,6 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
-  .popup__close:link, .popup__close:visited {
-    color: #787878;
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: inline-block; }
-  .popup__close:hover {
-    color: #54c47a; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -477,6 +467,17 @@ body {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+  .popup__close:link, .popup__close:visited {
+    color: #787878;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #54c47a; }
 
 .popup img {
   display: block;
